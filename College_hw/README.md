@@ -53,3 +53,71 @@ void main()
 	getch();
 }
 ```
+
+# 3. Enter matrix ,transpose matrix ,add another given matrix.
+
+```c
+#include <stdio.h>
+int main (){
+	int a[10][10],b[10][10];
+	int i,j,r,c; //row, column
+	
+//	Enter row & column no.
+	printf("enter row and column no.: ");
+	scanf("%d%d",&r, &c);
+
+//	Enter array
+	printf("\nenter elements of first matrix\n");
+	for (i=0; i<r; i++){
+	   for (j=0; j<c; j++){
+	      scanf("%d",&b[i][j]);}
+	}
+	
+//	transpose
+	for (i=0; i<r; ++i){
+	   for (j=0; j<c; ++j){
+	      a[j][i] =b[i][j];}
+	}
+	
+//	print transpose
+	printf("\nprinting transposed array\n");
+	for (i=0; i<c; ++i){
+	   for (j=0; j<r; ++j){
+	      printf("%d ",a[i][j]);}
+	   printf("\n");
+	}
+
+//	add array
+	int d[10][10], e[10][10];
+	int x, y;
+	printf("\nEnter the row and column of 2nd matrix: ");
+	scanf("%d%d", &x, &y);
+
+//	check for row and column 
+	if ((x!=c)||(y!=r)){
+	printf("\nSry cannot add matrix");
+	}
+	else
+	{
+//	input for 2nd array
+	for (i=0; i<x ; i++){
+	   for (j=0; j<y; j++){
+		scanf("%d",&d[i][j]);}
+	}
+
+//	adding
+	for (i=0; i<x; i++){
+	   for (j=0; j<y; j++){
+	      e[i][j]=d[i][j]+a[i][j];}
+		}
+//	printing
+	printf("\naddition:\n");
+	for (i=0; i<x ; i++){
+	   for (j=0; j<y ; j++){
+		printf("%d ", e[i][j]);}
+		printf("\n");}
+	}
+
+	return 0;
+}
+```
