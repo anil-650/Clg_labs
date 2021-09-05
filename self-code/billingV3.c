@@ -13,7 +13,6 @@
 # include <stdio.h>
 # include <stdlib.h>
 
-// 
 // stdlib  FOR atoi() , transforms strings into digits ignores alphabet & white space
 
 char item_name[][20]={"Milk","Cheese","Ghee","Bread"};
