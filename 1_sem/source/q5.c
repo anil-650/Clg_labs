@@ -1,12 +1,12 @@
 /*
-*5. Write a Program to compute the sum of the first n terms of the following series 
-* > S=1-2+3-4+5......
+*6. Write a Program to compute the sum of the first n terms of the following series 
+*> S = 1+1/2+1/3+1/4+……
 */
-
 #include <stdio.h>
 
 int main(){
-    int a,b,c,d,i;
+    float a,b;
+    int c,i;
 
     printf("Enter Series length: \n");
     scanf("%d", &c);
@@ -15,11 +15,10 @@ int main(){
     for(i=1;i<=c;i++)
     {
         a=i;
-        d=(a-(a+1));
-        b+=d;
+        b+=1/a;
     }
 
-    printf("\nSum of the Series to nth term=%d",b);
+    printf("\nSum of the Series to nth term=%.2f",b);
 
     return 0;
 }
