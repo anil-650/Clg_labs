@@ -1,5 +1,6 @@
+#### Finished Q1-11
 ➡️ [Answers](source/)
-#### Unfinished
+#### Unfinished Q12-20
 ❗[Q10](q10.c)
 ❗[Q12](q12.c)
 ❗[Q13](q13.c)
