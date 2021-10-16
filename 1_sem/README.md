@@ -1,4 +1,8 @@
 ➡️ [Answers](source/)
+#### Unfinished
+❗[Q10](q10.c)
+❗[Q12](q12.c)
+❗[Q13](q13.c)
 
 # Core-2 Practical: Programming Fundamentals using C Lab 
 1. Write a Program to find greatest among three numbers.
