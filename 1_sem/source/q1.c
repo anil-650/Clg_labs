@@ -3,6 +3,10 @@
 
 #include <stdio.h>
 
+void greatest(int g){
+    printf("\n%d is greatest\n",g);
+}
+
 int main(){
 
     int a,b,c;
@@ -11,11 +15,11 @@ int main(){
     scanf("%d %d %d",&a ,&b ,&c);
 
     if(a>b||a>c)
-        printf("\n%d greatest\n",a);
+        greatest(a);
     else if(b>c)
-        printf("\n%d greatest\n",b);
+        greatest(b);
     else
-        printf("\n%d greatest\n",c);
+        greatest(c);
 
     return 0;
 }
