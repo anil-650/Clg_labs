@@ -45,25 +45,15 @@ The program should present a menu to the user and ask for one of the options. Th
 16. Write a program which takes the radius of a circle as input from the user, passes it to another function that computes the area and the circumference of the circle and displays the value of area and circumference from the main( ) function. 
 17. Write a program to find sum and average of n elements entered by the user. To write this program, allocate memory dynamically using malloc( ) / calloc( ) functions. 
 18. Write a menu driven program to perform following operations on strings:
-
 a) Show address of each character in string
-
 b) Concatenate two strings without using strcat function. 
-
 c) Concatenate two strings using strcat function. 
-
 d) Compare two strings 
-
 e) Calculate length of the string (use pointers) 
-
 f) Convert all lowercase characters to uppercase 
-
 g) Convert all uppercase characters to lowercase 
-
 h) Calculate number of vowels
-
 i) Reverse the string 
-
 19. Given two ordered arrays of integers, write a program to merge the two-arrays to get an ordered array.
 20. Write a program to copy the content of one file to other.  
 
