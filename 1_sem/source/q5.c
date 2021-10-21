@@ -8,17 +8,14 @@ int main(){
     float a,b;
     int c,i;
 
-    printf("Enter Series length: \n");
+    printf("Enter Series length: ");
     scanf("%d", &c);
 
-
-    for(i=1;i<=c;i++)
-    {
-        a=i;
-        b+=1/a;
+    for(i=1;i<=c;i++){
+        a=i; b+=1/a;
     }
 
-    printf("\nSum of the Series to nth term=%.2f",b);
+    printf("Sum of the Series to nth term=%.2f",b);
 
     return 0;
 }

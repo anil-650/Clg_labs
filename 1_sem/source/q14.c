@@ -5,8 +5,8 @@
 int main (){
     int no1,no2,*p,*k,temp;
 
-    no1 = 1;
-    no2 = 2;
+    printf( "Enter 2 no.\n");
+    scanf("%d %d",&no1,&no2);
 
     p = &no1;
     k = &no2;

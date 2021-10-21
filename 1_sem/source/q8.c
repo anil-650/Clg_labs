@@ -1,40 +1,48 @@
-//8. Write a function to find whether a given no. is prime or not. Use the same to generate the       prime numbers less than 100.
-
 #include <stdio.h>
 
-void prime_no(){
-    int num, count, i, prime;
+int prime(int n){
+    int j,flag=0;
+    for (j = 2; j <= n / 2; ++j) {
 
-    printf("Prime Numbers from 1 To 100 are\n");
-
-    for(num = 1; num <= 100; num++)
-    {
-        if(num == 1)
-        {
-            printf("Number 1 is neither prime nor composite\n");
-            continue;
-        }
-
-        count = num/2;
-        prime = 1;
-        for(i = 2; i <= count; i++)
-        {
-            if(num % i == 0)
-            {
-                prime = 0;
-                break;
-            }
-        }
-
-        if(prime == 1)
-        {
-            printf("%d\t", num);
+        if (n % j == 0) {
+            flag = 1;
+            break;
         }
     }
+    return flag;
 }
-
 int main(){
-    prime_no();
-    
+    int a, i,num,count;
+    printf("Enter a positive integer: ");
+    scanf("%d", &a);
+    if (a == 1) {
+        printf("1 is neither prime nor composite.");
+    } 
+    else 
+    {
+        if (prime(a) == 0)
+            printf("%d is a prime number.", a);
+        else
+            printf("%d is not a prime number.", a);
+    }
+
+
+    printf("prime number between 1 to 100 are :\n");
+    for(num = 1; num <= 100; num++)
+    {
+        count = 0;
+
+        if(prime(num) == 1)
+        {
+            count++;
+            continue;       // changed from break;
+        }
+
+        if(count == 0 && num != 1 )
+        {
+            printf(" %d ", num);
+        }  
+    }
+
     return 0;
 }

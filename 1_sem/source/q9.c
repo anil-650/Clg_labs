@@ -8,13 +8,12 @@ int main (){
     printf("Enter a no.:");
     scanf("%d",&no);
 
-    printf("factors:%d ",no);
+    printf("factors:\n%d",no);
 
     for(i=1 ; i<=no ; i++)
         for(j=1 ; j<=no/2 ; j++)
             if (j*i == no)
-                printf("%d ",j);
-    printf("\n");
+                printf("\n%d ",j);
 
     return 0;
 }
