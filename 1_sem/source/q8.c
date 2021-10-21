@@ -27,22 +27,21 @@ int main(){
     }
 
 
-    printf("prime number between 1 to 100 are :\n");
+    printf("\nprime number between 1 to 100 are :\n");  //print in new line
     for(num = 1; num <= 100; num++)
     {
         count = 0;
 
-        if(prime(num) == 1)
-        {
+        if(prime(num) == 1){
             count++;
             continue;       // changed from break;
         }
 
         if(count == 0 && num != 1 )
-        {
-            printf(" %d ", num);
-        }  
+            printf(" %d\t", num);   //\t
     }
+    
+    printf("\n");   //print new line 
 
     return 0;
 }
