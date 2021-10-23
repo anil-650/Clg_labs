@@ -3,19 +3,14 @@
 #include <stdio.h>
 
 int main(){
-    int a,b,c;
+    int a,b;
+    char c;
+
+    printf("\nenter an operations from(+ - * / %%): ");
+    scanf("%c", &c);
+    
     printf("Enter 2 no.\n");
     scanf("%d %d",&a ,&b);
-
-    printf("\nOperations:\n"
-            "[1]Plus(+)\n"
-            "[2]Minus(-)\n"
-            "[3]Multiply(*)\n"
-            "[4]Divide(/)\n"
-            "[5]Moduls(%%)\n"
-            "\nEnter no: ");
-
-    scanf("%d", &c);
 
     switch(c)
     {
@@ -23,19 +18,19 @@ int main(){
             printf("\nInvalid\n");
             break;
 
-        case 1:
+        case '+':
             printf("\n%d + %d = %d\n",a,b,a+b);
             break;
-        case 2:
+        case '-':
             printf("\n%d - %d = %d\n",a,b,a-b);
             break;
-        case 3:
+        case '*':
             printf("\n%d * %d = %d\n",a,b,a*b);
             break;
-        case 4:
+        case '/':
             printf("\n%d / %d = %d\n",a,b,a/b);
             break;
-        case 5:
+        case '%':
             printf("\n%d %% %d = %d\n",a,b,a % b);
             break;
     }

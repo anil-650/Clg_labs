@@ -1,3 +1,5 @@
+//8. Write a function to find whether a given no. is prime or not. Use the same to generate the       prime numbers less than 100.
+
 #include <stdio.h>
 
 int prime(int n){
@@ -11,6 +13,7 @@ int prime(int n){
     }
     return flag;
 }
+
 int main(){
     int a, i,num,count;
     printf("Enter a positive integer: ");
