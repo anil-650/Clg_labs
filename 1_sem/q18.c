@@ -1,3 +1,4 @@
+
 /*
  *18. Write a menu driven program to perform following operations on strings:
  *a) Show address of each character in string
@@ -16,31 +17,33 @@
 #include <string.h>
 
 int i,j,len;
+char s1[30],s2[30];
 
-void a(char z[]){
-    len = strlen(z);
-
-    for(i=0 ;i<len ;i++)
-        printf("index[%d]= %c\n",i,z[i]);
+void load_arr1(){
+    printf("Enter String 1:\n");
+    scanf("%s",s1);
 }
 
-void b(char x[], char y[]){
-    int len2,len3,*ptr;
-    
-    len = strlen(x);
-    len2 = strlen(y);
-    len3 = len+len2;
-    
-    char xy[]={0};
-    ptr = xy;
+void load_arr2(){
+    printf("Enter String 2:\n");
+    scanf("%s",s2);
+}
+
+void a(){
+    load_arr1();
+    len = strlen(s1);
 
     for(i=0 ;i<len ;i++)
-        ptr+i = x[i];
+        printf("index[%d]= %c\n",i,s1[i]);
+}
 
-
-
-
-
+void b(){
+    
+    load_arr1();
+    load_arr2();
+    
+    printf("%s %lu\n",s1,strlen(s1));
+    printf("%s %lu\n",s2,strlen(s1));
 }
 
 void show_opt(){
@@ -59,7 +62,7 @@ void show_opt(){
 }
 
 int main (){
-    char string1[]={0},string2[]={0},x;
+    char string1[30],x;
 
     show_opt();
     scanf(" %c",&x);
@@ -71,17 +74,13 @@ int main (){
             break;
 
         case 'a':           //index of char in string
-            printf("Enter String 1:\n");
-            scanf("%s",string1);
             a(string1);
             break;
 
         case 'b':
             printf("Enter String 1:\n");
             scanf("%s",string1);
-            printf("Enter String 2\n");
-            scanf("%s",string2);
-            b(string1, string2);
+            b(string1);
             break;
 
             /*
