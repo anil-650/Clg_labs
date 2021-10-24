@@ -19,18 +19,22 @@
 int i,j,len;
 char s1[30],s2[30];
 
-void load_arr1(){
-    printf("Enter String 1:\n");
-    scanf("%s",s1);
-}
+void load_arr(int n){
+    if(n == 1){
+        printf("Enter String 1:\n");
+        scanf("%s",s1);
+    }
 
-void load_arr2(){
-    printf("Enter String 2:\n");
-    scanf("%s",s2);
+    if(n == 2){
+        printf("Enter String 1:\n");
+        scanf("%s",s1);
+        printf("Enter String 2:\n");
+        scanf("%s",s2);
+    }
 }
 
 void a(){
-    load_arr1();
+    load_arr(1);
     len = strlen(s1);
 
     for(i=0 ;i<len ;i++)
@@ -38,12 +42,95 @@ void a(){
 }
 
 void b(){
-    
-    load_arr1();
-    load_arr2();
-    
-    printf("%s %lu\n",s1,strlen(s1));
-    printf("%s %lu\n",s2,strlen(s1));
+    load_arr(2);
+
+    char temp[30];
+    char *p,*q;
+    int len2=strlen(s2);
+    p=temp; q=p+len;
+
+    len = strlen(s1);
+    for(i = 0; i< len; i++)
+        p[i] = s1[i];
+    for(i = len,j = 0; j < len2; i++,j++)
+        q[i] = s2[j];
+
+    printf("Concatenate:\n %s\n",temp);
+}
+
+void c(){
+    load_arr(2);
+    strcat(s1,s2);
+    printf("Concatenate:\n%s\n",s1);
+}
+
+void d(){
+    load_arr(2);
+    int cmp;
+
+    cmp=strcmp(s1,s2);
+    if(cmp == 0)
+        printf("Strings are equal\n");
+    else
+        printf("Strings aren't equal\n");
+}
+
+
+void e(){
+    load_arr(1);
+    char *p;
+    p=s1;
+    len = 0;
+
+    while(*p != '\0'){
+    len++;
+    p++;
+    }
+
+    printf("string length: %d\n",len);
+}
+
+void f(){
+    printf("Enter all lowercase\n");
+    load_arr(1);
+    char *p=s1;
+
+    printf("In uppercase\n");
+    while(*p!='\0'){
+        printf("%c", *p-32);
+        p++;
+    }
+    printf("\n");
+}
+
+void g(){
+    printf("Enter all uppercase\n");
+    load_arr(1);
+    char *p=s1;
+
+    printf("In lowercase\n");
+    while(*p!='\0'){
+        printf("%c", *p+32);
+        p++;
+    }
+    printf("\n");
+}
+
+void h(){
+    load_arr(1);
+    int count=0;
+    char temp[5]="aeiou";
+    char temp2[5];
+
+    for(i = 0; i <5; i++)
+        temp2[i]=temp[i]-32;
+
+    for(i = 0; i <strlen(s1) ; i++)
+        for(j = 0; j <5; j++)
+            if(s1[i]==temp[j] || s1[i]==temp2[j])
+                count++;
+
+    printf("There are %d vowels\n",count);
 }
 
 void show_opt(){
@@ -62,7 +149,7 @@ void show_opt(){
 }
 
 int main (){
-    char string1[30],x;
+    char x;
 
     show_opt();
     scanf(" %c",&x);
@@ -74,40 +161,38 @@ int main (){
             break;
 
         case 'a':           //index of char in string
-            a(string1);
+            a();
             break;
 
         case 'b':
-            printf("Enter String 1:\n");
-            scanf("%s",string1);
-            b(string1);
+            b();
             break;
 
-            /*
         case 'c':
-            a(string1);
+            c();
             break;
 
         case 'd':
-            a(string1);
+            d();
             break;
 
         case 'e':
-            a(string1);
+            e();
             break;
 
         case 'f':
-            a(string1);
+            f();
             break;
 
         case 'g':
-            a(string1);
+            g();
             break;
 
         case 'h':
-            a(string1);
+            h();
             break;
 
+            /*
         case 'i':
             a(string1);
             break;
