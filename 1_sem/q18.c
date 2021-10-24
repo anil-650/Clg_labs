@@ -120,10 +120,7 @@ void h(){
 
     int count=0;
     char temp[5]="aeiou";
-    char temp2[5];
-
-    for(i = 0; i <5; i++)
-        temp2[i]=temp[i]-32;
+    char temp2[5]="AEIOU";
 
     for(i = 0; i <strlen(s1) ; i++)
         for(j = 0; j <5; j++)
