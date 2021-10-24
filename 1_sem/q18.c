@@ -21,7 +21,7 @@ char s1[30],s2[30];
 
 void load_arr(int n){
     if(n == 1){
-        printf("Enter String 1:\n");
+        printf("Enter String :\n");
         scanf("%s",s1);
     }
 
@@ -47,9 +47,10 @@ void b(){
     char temp[30];
     char *p,*q;
     int len2=strlen(s2);
-    p=temp; q=p+len;
 
+    p=temp; q=p+len;
     len = strlen(s1);
+
     for(i = 0; i< len; i++)
         p[i] = s1[i];
     for(i = len,j = 0; j < len2; i++,j++)
@@ -75,12 +76,10 @@ void d(){
         printf("Strings aren't equal\n");
 }
 
-
 void e(){
     load_arr(1);
     char *p;
-    p=s1;
-    len = 0;
+    p=s1; len = 0;
 
     while(*p != '\0'){
     len++;
@@ -118,6 +117,7 @@ void g(){
 
 void h(){
     load_arr(1);
+
     int count=0;
     char temp[5]="aeiou";
     char temp2[5];
@@ -130,7 +130,7 @@ void h(){
             if(s1[i]==temp[j] || s1[i]==temp2[j])
                 count++;
 
-    printf("There are %d vowels\n",count);
+    printf("No. of vowel in string: %d\n",count);
 }
 
 void show_opt(){
