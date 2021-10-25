@@ -1,9 +1,9 @@
-#### Finished Q1-11,13,14,16,17
+#### Finished Q1-11,13,14,16,17,19,20
 ➡️ [Answers](source/)
 #### Unfinished Q12-20
 ❗[Q18](q18.c)
 ❗[Q12](q12.c)
-<!---❗[Q13](q13.c)--->
+❗[Q15](q15.c)
 
 # Core-2 Practical: Programming Fundamentals using C Lab 
 1. Write a Program to find greatest among three numbers.
