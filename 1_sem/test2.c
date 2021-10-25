@@ -8,7 +8,9 @@ int main(){
 
     printf("-------:Creating file:-------\n");
     printf("Enter source file :");
-    scanf("%s\n",f1);
+    scanf("%s",f1);
+    getchar();
+    printf("\nfile created\n");
 
     fp1=fopen(f1,"w");
     printf("Enter text for %s\n",f1);
@@ -25,7 +27,6 @@ int main(){
 
     fp2=fopen(f2,"w");
     fputs(s1,fp2);
-    fputs("\n",fp2);
 
     fclose(fp1);
     fclose(fp2);
