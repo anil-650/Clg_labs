@@ -5,10 +5,8 @@
 
 int main()
 {
-    char ch;// source_file[20], target_file[20];
+    char ch, f1[20], f2[20];
     FILE *source, *target;
-    char f1[20];
-    char f2[20];
 
     printf("Enter file name to copy from :\n");
     scanf("%s",f1);
@@ -19,7 +17,7 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    printf("Enter file name to copy from :\n");
+    printf("Enter file name to copy to :\n");
     scanf("%s",f2);
 
     target = fopen(f2, "w");
