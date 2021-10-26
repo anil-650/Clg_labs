@@ -33,7 +33,7 @@ void load_arr(int n){
     }
 }
 
-void a(){
+void a(){       //index character in string
     load_arr(1);
     len = strlen(s1);
 
@@ -41,7 +41,7 @@ void a(){
         printf("index[%d]= %c\n",i,s1[i]);
 }
 
-void b(){
+void b(){       //Concatenate without strcat
     load_arr(2);
 
     char temp[30];
@@ -59,13 +59,13 @@ void b(){
     printf("Concatenate:\n %s\n",temp);
 }
 
-void c(){
+void c(){       //Concatenate with strcat
     load_arr(2);
     strcat(s1,s2);
     printf("Concatenate:\n%s\n",s1);
 }
 
-void d(){
+void d(){       //Compare 2 strings
     load_arr(2);
     int cmp;
 
@@ -76,7 +76,7 @@ void d(){
         printf("Strings aren't equal\n");
 }
 
-void e(){
+void e(){       //String length using pointers
     load_arr(1);
     char *p;
     p=s1; len = 0;
@@ -89,7 +89,7 @@ void e(){
     printf("string length: %d\n",len);
 }
 
-void f(){
+void f(){       //lowercase to uppercase
     printf("Enter all lowercase\n");
     load_arr(1);
     char *p=s1;
@@ -102,7 +102,7 @@ void f(){
     printf("\n");
 }
 
-void g(){
+void g(){       //uppercase to lowercase
     printf("Enter all uppercase\n");
     load_arr(1);
     char *p=s1;
@@ -115,7 +115,7 @@ void g(){
     printf("\n");
 }
 
-void h(){
+void h(){       //Calculate number of vowels
     load_arr(1);
 
     int count=0;
@@ -128,6 +128,21 @@ void h(){
                 count++;
 
     printf("No. of vowel in string: %d\n",count);
+}
+
+void ii(){      //Reverse the string
+    load_arr(1);
+
+    int temp;
+    len =strlen(s1);
+
+    for(i=0; i<len/2; i++){
+        temp = s1[i];
+        s1[i] = s1[len-i-1];
+        s1[len-i-1] = temp;
+    }
+
+    printf("%s\n",s1);
 }
 
 void show_opt(){
@@ -150,7 +165,6 @@ int main (){
 
     show_opt();
     scanf(" %c",&x);
-    
 
     switch(x){
         default:
@@ -189,11 +203,9 @@ int main (){
             h();
             break;
 
-            /*
         case 'i':
-            a(string1);
+            ii();
             break;
-            */
 
     }
     return 0;
