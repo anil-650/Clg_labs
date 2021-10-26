@@ -1,7 +1,6 @@
-#### Finished Q1-11,13,14,16,17,19,20
+#### Finished Q1-11,13,14,16-20
 ➡️ [Answers](source/)
 #### Unfinished Q12-20
-❗[Q18](q18.c)
 ❗[Q12](q12.c)
 ❗[Q15](q15.c)
 
