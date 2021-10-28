@@ -1,8 +1,5 @@
-#### Finished Q1-11,13,14,16-20
+#### Finished 
 ➡️ [Answers](source/)
-#### Unfinished Q12-20
-❗[Q12](q12.c)
-❗[Q15](q15.c)
 
 # Core-2 Practical: Programming Fundamentals using C Lab 
 1. Write a Program to find greatest among three numbers.
