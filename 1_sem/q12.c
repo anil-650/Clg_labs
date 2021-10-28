@@ -7,64 +7,66 @@
  *d)Print the maximum and minimum element of array
  *e)Remove the duplicates from the array
  *f)Print the array in reverse order
+ *The program should present a menu to the user and ask for one of the options. The menu should also include options to re-enter array and to quit the program.
+ *
  */
 
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int no,i;
+int no,i,j,k,array[30];
 
-void load_array(int s[])
+void load_array()
 {
     printf("Enter the no of elements: ");
     scanf("%d",&no);
 
     for(i = 0; i < no; i++)
     {
-        printf("element [%d] = ",i+1);
-        scanf("%d",&s[i]);
+        printf("element [%d] = ",i);
+        scanf("%d",&array[i]);
     }
 
     printf("\nArray:\n");
 
     for(i = 0; i < no ; i++)
-        printf("%d ",s[i]);
+        printf("%d ",array[i]);
     printf("\n");
-
 }
 
-void a(int h[])     //even elements of array
+void a()     //even elements of array
 {
     printf("\nEven elements in array : ");
 
     for(i = 0; i < no; i++)
     {
-        if(h[i]%2 == 0)
-            printf("%d ",h[i]);
+        if(array[i]%2 == 0)
+            printf("%d ",array[i]);
     }
 
     printf("\n");
 }
 
-void b(int k[])     //odd elements of array
+void b()     //odd elements of array
 {
     printf("\nOdd elements in array : ");
 
     for(i = 0; i < no; i++)
     {
-        if(k[i]%2 != 0)
-            printf("%d ",k[i]);
+        if(array[i]%2 != 0)
+            printf("%d ",array[i]);
     }
 
     printf("\n");
 }
 
-void c(int j[])     //sum & avg of array
+void c()     //sum & avg of array
 {
     int sum=0, avg=0;
 
     for(i = 0; i < no; i++)
-        sum+=j[i];
+        sum+=array[i];
 
     avg = sum/no;
 
@@ -72,55 +74,51 @@ void c(int j[])     //sum & avg of array
             "\nAverage of elements: %d\n ",sum,avg);
 }
 
-void d(int l[])     //min max element of array
+void d()     //min max element of array
 {
     int large,small;
-    large = small = l[0];
+    large = small = array[0];
 
     for(i = 0; i < no; i++)
     {
-        if(l[i] > large)
-            large = l[i];
+        if(array[i] > large)
+            large = array[i];
 
-        if(l[i] < small)
-            small = l[i];
+        if(array[i] < small)
+            small = array[i];
     }
 
     printf("\nMax element:%d\nMin element:%d\n",large,small);
 }
 
-void e(int m[])     //delete duplicate from array NOT WORKING
+void e()     //delete duplicate from array NOT WORKING
 {
-    int uniq,exsist,j=0,k,temp[]={0};
 
-    for(i = 0; i < no; i++)
-    {
-        uniq=m[i];
-        exsist=0;
-        for(k = 0; k < i; k++){
-            if(temp[k]==uniq)
-                exsist=1;
+    for(i=0 ; i<no; i++){
+        for(j=i+1 ; j<no ; j++){
+            if(array[i]==array[j]){
+                for(k=j ; k<no ; k++){
+                    array[k]=array[k+1];
+                }
+                no--;
+                j--;
+            }
         }
-
-        if(!exsist){
-            temp[j]=m[i];
-            j++;
-        }
-
-        printf("\nAfter deleting duplicates from Array:\n");
-        for(i = 0; i < no ; i++)
-            printf("%d ",temp[i]);
-
-
     }
+
+    printf("After deleting duplicates:\n");
+    for(i=0 ; i<no; i++)
+        printf("%d ",array[i]);
+    printf("\n");
+
 }
 
-void f(int o[])     //print array in reverse
+void f()     //print array in reverse
 {
     printf("\nArray in Reverse:\n");
 
     for(i = no-1; i >= 0; i--)
-        printf("%d ",o[i]);
+        printf("%d ",array[i]);
 
     printf("\n");
 }
@@ -134,14 +132,15 @@ void opt_show()
             "d)Print the maximum and minimum element of array\n"
             "e)Remove the duplicates from the array\n"
             "f)Print the array in reverse order\n"
+            "\n\tq)Quit\t\tr)Re-enter Array\n"
             "\n");
 }
 
-int main (){
-    int arr[]={0};
+int main ()
+{
     char x;
-
-    load_array(arr);
+renter:
+    load_array();
 
     opt_show();
 
@@ -154,28 +153,35 @@ defult:
         break;
 
         case 'a':
-        a(arr);
+        a();
         break;
 
         case 'b':
-        b(arr);
+        b();
         break;
 
         case 'c':
-        c(arr);
+        c();
         break;
 
         case 'd':
-        d(arr);
+        d();
         break;
 
         case 'e':
-        e(arr);
+        e();
         break;
 
         case 'f':
-        f(arr);
+        f();
         break;
+
+        case 'q':
+        exit(0);
+        break;
+
+        case 'r':
+        goto renter;
     }
 
     return 0;
