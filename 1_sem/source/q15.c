@@ -2,20 +2,21 @@
 
 #include <stdio.h>
 
-void alt(int a, int b){
+void alt(int *a, int *b){
     int temp;
 
-    printf("Before altering num1 = %d\tnum2 = %d\n",a,b);
+    printf("Before altering num1 = %d\tnum2 = %d\n",*a,*b);
 
-    temp = a;
-    a = b;
-    b = temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
 
-    printf("After altering  num1 = %d\tnum2 = %d\n",a,b);
+    printf("After altering  num1 = %d\tnum2 = %d\n",*a,*b);
 }
 
 int main (){
     int num1, num2;
+    int *n1,*n2;
 
     printf("Enter 2 no.\n");
     printf("Enter num1: ");
@@ -23,7 +24,9 @@ int main (){
     printf("Enter num2: ");
     scanf("%d",&num2);
 
-    alt(num1,num2);
+    n1 =&num1 ; n2 =&num2 ;
+
+    alt(n1,n2);
 
     return 0;
 }
