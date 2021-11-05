@@ -139,7 +139,7 @@ void opt_show()
 int main ()
 {
     char x;
-renter:
+re_enter:
     load_array();
 
     opt_show();
@@ -148,7 +148,7 @@ renter:
     scanf(" %c",&x);
 
     switch(x){
-defult:
+        default:
         printf("\nInvalid\n");
         break;
 
