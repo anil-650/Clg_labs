@@ -181,7 +181,7 @@ re_enter:
         break;
 
         case 'r':
-        goto renter;
+        goto re_enter;
     }
 
     return 0;
