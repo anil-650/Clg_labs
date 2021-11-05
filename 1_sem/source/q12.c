@@ -91,7 +91,7 @@ void d()     //min max element of array
     printf("\nMax element:%d\nMin element:%d\n",large,small);
 }
 
-void e()     //delete duplicate from array NOT WORKING
+void e()     //delete duplicate from array
 {
 
     for(i=0 ; i<no; i++){
