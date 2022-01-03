@@ -72,14 +72,14 @@ INX H
 MOV M,A
 HLT
 ```
-8. 1s complement of number
+8. 1's complement of number
 ```s
 LDA 2501H
 CMA
 STA 2502H
 HLT
 ```
-9. 2s complement of a number
+9. 2's complement of a number
 ```s
 LDA 2501H
 CMA
