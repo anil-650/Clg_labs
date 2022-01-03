@@ -1,10 +1,10 @@
-1. Stone 8-bit of data in memory using address
+1. Store 8-bit of data in memory using address
 ```s
 MVI A,49 H
 STA 2501 H
 HLT
 ```
-2. Stone 8-bit of data in memory using indirect address.
+2. Store 8-bit of data in memory using indirect address.
 ```s
 LXI H 
 MVI M
