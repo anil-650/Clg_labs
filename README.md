@@ -1,4 +1,4 @@
-# C_Lab
+# Clg_Lab
 Clg_Lab, mostly consists of my college and some self made c code.
 
 1. My Clg Homework and practices 👨‍💻 [here](College_hw/README.md).
