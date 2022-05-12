@@ -11,13 +11,11 @@
 9. Write a program to show that during function overloading, if no matching argument is found, then Java will apply automatic type conversions (from lower to higher data type)
 10. Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by specie value and objects are passed by reference and to learn use of final keyword. Write a program to show the use of static functions and to pass variable length arguments in a function.
 11. Write a program to show the use of static functions and to pass variable length arguments in a function.
-14. Write a program to demonstrate the concept of boxing and unboxing.
-15. Create a multi-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
-16. Write a program to create a multilevel package and also creates a reusable class to generate Fibonacci series, where the function to generate Fibonacci series is given in a different file belonging to the same package.
-17. Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages.
-18. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
-19. Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.
-20. Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).
-21. Write a program to demonstrate priorities among multiple threads. 
-22. Write a program to demonstrate different mouse handling events like mouseClicked(), mouseEntered(), mouseExited(), mousePressed(), mouseReleased() & mouseDragged().
-23. Write a program o demonstrate different keyboard handling events.
+12. Write a program to demonstrate the concept of boxing and unboxing.
+13. Create a multi-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
+14. Write a program to create a multilevel package and also creates a reusable class to generate Fibonacci series, where the function to generate Fibonacci series is given in a different file belonging to the same package.
+15. Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages.
+16. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
+17. Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.
+18. Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).
+19. Write a program to demonstrate priorities among multiple threads. 
