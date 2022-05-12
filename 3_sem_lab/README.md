@@ -18,5 +18,6 @@
 18. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
 19. Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.
 20. Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).
-21. Write a program to demonstrate priorities among multiple threads. 22. Write a program to demonstrate different mouse handling events like mouseClicked(), mouseEntered(), mouseExited(), mousePressed(), mouseReleased() & mouseDragged().
+21. Write a program to demonstrate priorities among multiple threads. 
+22. Write a program to demonstrate different mouse handling events like mouseClicked(), mouseEntered(), mouseExited(), mousePressed(), mouseReleased() & mouseDragged().
 23. Write a program o demonstrate different keyboard handling events.
