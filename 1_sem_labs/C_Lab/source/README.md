@@ -271,6 +271,19 @@ int main (){
 }
 ```
 
+```
+
+# out 9
+Enter a no.:45
+factors:
+45
+15 
+9 
+5 
+3 
+1 
+```
+
 ```c
 //10. Write a program to swap two numbers using macro.
 
@@ -294,6 +307,16 @@ int main()
 
     return 0;
 }
+```
+
+```
+
+# out 10
+Enter 2 numbers
+26  6
+Before swapping: a = 2 and b = 6
+After swapping: a = 6 and b = 2
+
 ```
 
 ```c
@@ -327,6 +350,17 @@ int main (){
 
     return 0;
 }
+```
+
+```
+
+# out 11
+Line no.:4 5 4
+*
+***
+*****
+*******
+
 ```
 
 ```c
@@ -521,6 +555,34 @@ re_enter:
 }
 ```
 
+```
+
+# out 12
+Enter the no of elements: 3
+element [0] = 4
+element [1] = 5
+element [2] = 6
+
+Array:
+4 5 6 
+
+a)Print the even-valued elements
+b)Print the odd-valued elements
+c)Calculate and print the sum and average of the elements of array
+d)Print the maximum and minimum element of array
+e)Remove the duplicates from the array
+f)Print the array in reverse order
+
+	q)Quit		r)Re-enter Array
+
+
+Enter option: c
+
+Sum of elements: 15 
+Average of elements: 5
+ 
+```
+
 ```c
 //13. Write a Program that prints a table indicating the number of occurrences of each alphabet in the text entered as command line arguments.
 
@@ -559,6 +621,19 @@ int main (){
     }
 ```
 
+```
+
+# out 13
+Enter string:
+Nihar
+'N' = 1 
+'i' = 1 
+'h' = 1 
+'a' = 1 
+'r' = 1 
+
+```
+
 ```c
 //14. Write a program that swaps two numbers using pointers.
 
@@ -584,6 +659,16 @@ int main (){
 
     return 0;
 }
+```
+
+```
+
+# out 14
+Enter 2 no.
+65 78
+Before swap	 no1 = 65	no2 = 78
+After swap	 no1 = 78	no2 = 65
+
 ```
 
 ```c
@@ -622,6 +707,17 @@ int main (){
 }
 ```
 
+```
+
+# out 15
+Enter 2 no.
+Enter num1: 4
+Enter num2: 3
+Before altering num1 = 4	num2 = 3
+After altering  num1 = 3	num2 = 4
+
+```
+
 ```c
 /*16. Write a program which takes the radius of a circle as input from the user, passes it to another function that computes the area and the circumference of the circle and displays the value of area and circumference from the main( ) function.
 */
@@ -649,6 +745,15 @@ int main (){
     area_circum(radius);
     return 0;
 }
+```
+
+```
+
+# out 16
+Enter Circles radius : 5
+Area of circle = 78.50
+Circumference of circle = 31.40
+
 ```
 
 ```c
@@ -680,6 +785,17 @@ int main()
     free(arr);
     return 0;
 }
+```
+
+```
+
+# out 17
+Enter the total number of elements you want to enter : 3
+Enter element 1 : 5
+Enter element 2 : 6
+Enter element 3 : 7
+sum is 18 average is 6
+
 ```
 
 ```c
@@ -897,6 +1013,29 @@ int main (){
 }
 ```
 
+```
+# out 18
+
+a) Show address of each character in string
+b) Concatenate two strings without using strcat function.
+c) Concatenate two strings using strcat function.
+d) Compare two strings
+e) Calculate length of the string (use pointers)
+f) Convert all lowercase characters to uppercase
+g) Convert all uppercase characters to lowercase
+h) Calculate number of vowels
+i) Reverse the string
+
+
+Enter option: g
+Enter all uppercase
+Enter String :
+NIHAR
+In lowercase
+nihar
+
+```
+
 ```c
 //19. Given two ordered arrays of integers, write a program to merge the two-arrays to get an ordered array.
 
@@ -957,6 +1096,25 @@ int main()
 }
 ```
 
+```
+# out 19
+
+Enter the size of 1st array: 3
+
+Enter the size of 2nd array: 3
+
+Enter 1st array's sorted elements
+3 4 5
+
+Enter 2nd array's sorted elements
+6 7 8
+
+The merged array..
+3 4 5 6 7 8 
+After sorting...
+ 8  7  6  5  4  3 
+```
+
 ```c
 //20. Write a program to copy the content of one file to other.
 
@@ -996,4 +1154,14 @@ int main()
     fclose(target);
     return 0;
 }
+```
+
+```
+# out 20
+Enter file name to copy from :
+file1.txt
+Enter file name to copy to :
+file2.txt    
+
+Contents copied to file2.txt
 ```
