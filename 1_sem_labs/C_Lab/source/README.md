@@ -3,6 +3,7 @@
 
 
 #include <stdio.h>
+#include <conio.h>
 
 void great(int g){
     printf("\n%d is greatest\n",g);
@@ -26,6 +27,7 @@ int main(){
 //2. Write a Program to all arithmetic operation using switch case. 
 
 #include <stdio.h>
+#include <conio.h>
 
 int main(){
     int a,b;
@@ -69,6 +71,7 @@ int main(){
 ```c
 //3. Write a Program to print the sum and product of digits of an integer.
 #include <stdio.h>
+#include <conio.h>
 
 int main(){
     int a,b;
@@ -84,6 +87,7 @@ int main(){
 ```c
 //4. Write a Program to reverse a number.
 #include <stdio.h>
+#include <conio.h>
 
 int main(){
     int a,rev,temp;
@@ -110,6 +114,7 @@ int main(){
 *> S = 1+1/2+1/3+1/4+……
 */
 #include <stdio.h>
+#include <conio.h>
 
 int main(){
     float a,b;
@@ -135,6 +140,7 @@ int main(){
 */
 
 #include <stdio.h>
+#include <conio.h>
 
 int main(){
     int a,b,c,d,i;
@@ -157,6 +163,7 @@ int main(){
 //7. Write a function that checks whether a given string is Palindrome or not. Use this function to find whether the string entered by user is Palindrome or not.
 
 #include <stdio.h>
+#include <conio.h>
 #include <string.h>
 
 int is_palindrome(char s[]){
@@ -191,6 +198,7 @@ int main(){
 //8. Write a function to find whether a given no. is prime or not. Use the same to generate the       prime numbers less than 100.
 
 #include <stdio.h>
+#include <conio.h>
 
 int prime(int n){
     int j,flag=0;
@@ -244,6 +252,7 @@ int main(){
 //9. Write a Program to compute the factors of a given number.
 
 #include <stdio.h>
+#include <conio.h>
 
 int main (){
     int no,i,j;
@@ -266,6 +275,7 @@ int main (){
 //10. Write a program to swap two numbers using macro.
 
 #include <stdio.h>
+#include <conio.h>
 
 #define SWAP(x, y, temp) temp = x; x = y; y = temp;
 
@@ -294,6 +304,7 @@ int main()
 //*******
 
 #include <stdio.h>
+#include <conio.h>
 
 void line(int l)
 {
@@ -334,6 +345,7 @@ int main (){
 
 
 #include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
 
 int no,i,j,k,array[30];
@@ -515,6 +527,7 @@ re_enter:
 
 
 #include <stdio.h>
+#include <conio.h>
 #include <string.h>
 
 int main (){
@@ -550,6 +563,7 @@ int main (){
 //14. Write a program that swaps two numbers using pointers.
 
 #include <stdio.h>
+#include <conio.h>
 
 int main (){
     int no1,no2,*p,*k,temp;
@@ -576,6 +590,7 @@ int main (){
 //15. Write a program in which a function is passed address of two variables and then alter its contents.
 
 #include <stdio.h>
+#include <conio.h>
 
 void alt(int *a, int *b){
     int temp;
@@ -613,6 +628,7 @@ int main (){
 
 
 #include <stdio.h>
+#include <conio.h>
 
 void area_circum(float r){
     float area,circum,pi=3.14;
@@ -639,6 +655,7 @@ int main (){
 //17. Write a program to find sum and average of n elements entered by the user. To write this program, allocate memory dynamically using malloc( ) / calloc( ) functions. 
 
 #include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
 
 int main()
@@ -681,6 +698,7 @@ int main()
 
 
 #include <stdio.h>
+#include <conio.h>
 #include <string.h>
 
 int i,j,len;
@@ -883,6 +901,7 @@ int main (){
 //19. Given two ordered arrays of integers, write a program to merge the two-arrays to get an ordered array.
 
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -942,6 +961,7 @@ int main()
 //20. Write a program to copy the content of one file to other.
 
 #include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
 
 int main()
