@@ -337,7 +337,7 @@ float
 double
 ```
 
-## 10. Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by specie value and objects are passed by reference and to learn use of final keyword. Write a program to show the use of static functions and to pass variable length arguments in a function.
+## 10. Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by value and objects are passed by reference and to learn use of final keyword. 
 ```java
 
 class Distance{
