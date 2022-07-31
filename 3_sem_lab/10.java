@@ -20,13 +20,13 @@ class Distance{
         d3.f = d3.f+k;
         d3.i = d3.i+k;
     }
-    public class Main{
-        public static void main(String[] ags){
-            Distance d1 = new Distance(10,20);
-            Distance d2 = new Distance(20,30);
-            d1.display();
-            d1.add(d3);
-            d3.display();
-        }
+}
+public class Main{
+    public static void main(String[] ags){
+        Distance d1 = new Distance(10,20);
+        Distance d2 = new Distance(20,30);
+        d1.display();
+        d1.add(d2);
+        d2.display();
     }
 }
