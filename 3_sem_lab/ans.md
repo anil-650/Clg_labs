@@ -1,4 +1,4 @@
-##1. To find the sum of any number of integers entered as command line arguments.
+## 1. To find the sum of any number of integers entered as command line arguments.
 ```java
 class Sum{
     public static void main(String[] values){
@@ -24,7 +24,7 @@ Sum:50
 ```
 
 
-##2. To find the factorial of a given number.
+## 2. To find the factorial of a given number.
 ```java
 
 class factorial{
@@ -45,7 +45,7 @@ OUTPUT
 factorial of number 5 is 120
 ```
 
-##3. To convert a decimal to binary number.
+## 3. To convert a decimal to binary number.
 ```java
 
 class decimal_to_binary{
@@ -62,7 +62,7 @@ OUTPUT
 10101
 ```
 
-##4. To check if a number is prime not, by taking the number as input from the keyboard.
+## 4. To check if a number is prime not, by taking the number as input from the keyboard.
 ```java
 
 import java.util.Scanner;
@@ -101,7 +101,7 @@ OUTPUT
 5 is prime number
 ```
 
-##5. To find the sum of any number of integers interactively, i.e., entering every number from the keyboard, whereas the total number of integers is given as a command line argument
+## 5. To find the sum of any number of integers interactively, i.e., entering every number from the keyboard, whereas the total number of integers is given as a command line argument
 ```java
 
 import java.util.Scanner;
@@ -139,7 +139,7 @@ Enter 4 integers
 Sum : 10
 ```
 
-##6. Write a program that show working of different functions of String and StringBufferclasss like setCharAt(), setLength(), append(), insert(), concat( )and equals().
+## 6. Write a program that show working of different functions of String and StringBufferclasss like setCharAt(), setLength(), append(), insert(), concat( )and equals().
 ```java
 
 class string{
@@ -202,7 +202,7 @@ Hello
 false
 ```
 
-##7. Write program to create a "distance" class with methods where distance is computed in terms of feet and inches, how to create objects of a class and to see the use of this pointer
+## 7. Write program to create a "distance" class with methods where distance is computed in terms of feet and inches, how to create objects of a class and to see the use of this pointer
 ```java
 
 import java.util.*;
@@ -263,7 +263,7 @@ Total distance is:
 feet:40   inches:4
 ```
 
-##8. Modify the distance" class by creating constructor for assigning values. (feetandinches) to the distance object. Create another object and assign second object as reference variable to another object reference variable. Further create a third object which is a clone of the first object.
+## 8. Modify the distance" class by creating constructor for assigning values. (feetandinches) to the distance object. Create another object and assign second object as reference variable to another object reference variable. Further create a third object which is a clone of the first object.
 ```java
 
 class Dist {
@@ -308,7 +308,7 @@ Feet:3
 Inch:5
 ```
 
-##9. Write a program to show that during function overloading, if no matching argument is found, then Java will apply automatic type conversions (from lower to higher data type)
+## 9. Write a program to show that during function overloading, if no matching argument is found, then Java will apply automatic type conversions (from lower to higher data type)
 ```java
 
 class cl{
@@ -337,7 +337,7 @@ float
 double
 ```
 
-##10. Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by specie value and objects are passed by reference and to learn use of final keyword. Write a program to show the use of static functions and to pass variable length arguments in a function.
+## 10. Write a program to show the difference between public and private access specifiers. The program should also show that primitive data types are passed by specie value and objects are passed by reference and to learn use of final keyword. Write a program to show the use of static functions and to pass variable length arguments in a function.
 ```java
 
 class Distance{
@@ -384,7 +384,7 @@ meters:100
 centimeters:50
 ```
 
-##11. Write a program to show the use of static functions and to pass variable length arguments in a function.
+## 11. Write a program to show the use of static functions and to pass variable length arguments in a function.
 ```java
 
 
@@ -403,7 +403,7 @@ OUTPUT
 display method invoked
 ```
 
-##12. Write a program to demonstrate the concept of boxing and unboxing.
+## 12. Write a program to demonstrate the concept of boxing and unboxing.
 ```java
 
 import java.io.*;
@@ -430,7 +430,7 @@ Value of ch:a
 Value of gfg:a
 ```
 
-##13. Create a mUlti-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
+## 13. Create a mUlti-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
 ```java
 
 
@@ -470,7 +470,7 @@ Hello
 Hello
 ```
 
-##14. Write a program to create a multilevel package and also creates a reusable class to generate Fibonacci series, where the function to generate Fibonacci series is given in a different file belonging to the same package.
+## 14. Write a program to create a multilevel package and also creates a reusable class to generate Fibonacci series, where the function to generate Fibonacci series is given in a different file belonging to the same package.
 ```java
 
 import java.util.Scanner;
@@ -502,7 +502,7 @@ Enter length:5
 Febonacci series:0 1 1 2 3
 ```
 
-##15. Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages.
+## 15. Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages.
 ```java
 
 package Protection;
@@ -536,7 +536,7 @@ The value of y is     30
 The value of z is     10
 ```
 
-##16. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
+## 16. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
 ```java
 
 import java.util.Scanner;
@@ -567,7 +567,7 @@ Enter b:4
 a/b = 5.0/4.0=1.25
 ```
 
-##17. Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.
+## 17. Write a program to show the use of nested try statements that emphasizes the sequence of checking for catch handler statements.
 ```java
 
 class Nestedtry{
@@ -595,7 +595,7 @@ Array Index Out Of Bounds Exception
 Element at such Index doesn't exists
 ```
 
-##18. Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).
+## 18. Write a program to create your own exception types to handle situation specific to your application (Hint: Define a subclass of Exception which itself is a subclass of Throwable).
 ```java
 
 class myexception extends Exception{
@@ -635,7 +635,7 @@ Java ExecptionTest 5 105
 Exception name is Myexception
 ```
 
-##19. Write a program to demonstrate priorities among multiple threads. 
+## 19. Write a program to demonstrate priorities among multiple threads. 
 
 ```java
 
