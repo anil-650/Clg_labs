@@ -263,7 +263,7 @@ Total distance is:
 feet:40   inches:4
 ```
 
-## 8. Modify the distance" class by creating constructor for assigning values. (feetandinches) to the distance object. Create another object and assign second object as reference variable to another object reference variable. Further create a third object which is a clone of the first object.
+## 8. Modify the distance" class by creating constructor for assigning values. (feet and inches) to the distance object. Create another object and assign second object as reference variable to another object reference variable. Further create a third object which is a clone of the first object.
 ```java
 
 class Dist {
@@ -366,8 +366,8 @@ public class Main{
         Distance d1 = new Distance(10,20);
         Distance d2 = new Distance(20,30);
         d1.display();
-        d1.add(d3);
-        d3.display();
+        d1.add(d2);
+        d2.display();
     }
 }
 ```
@@ -430,7 +430,7 @@ Value of ch:a
 Value of gfg:a
 ```
 
-## 13. Create a mUlti-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
+## 13. Create a multi-file program where in one file a string message is taken as input from the user and the function to display the message on the screen is given in another file (make use of Scanner package in this program).
 ```java
 
 
@@ -475,7 +475,7 @@ Hello
 
 import java.util.Scanner;
 
-class Febonacciseries{
+class Fibonacciseries{
     public static void main(String args[]){
         int len;
         Scanner sc = new Scanner(System.in);
@@ -488,7 +488,7 @@ class Febonacciseries{
         for(int i=2; i<len; i++){
             arr[i] = arr[i-1]+arr[i-2];
         }
-        System.out.println("Febonacci series");
+        System.out.println("Fibonacci series");
         for(int i=0; i<len ;i++){
             System.out.print(arr[i]+" ");
         }
@@ -499,7 +499,7 @@ class Febonacciseries{
 ```
 OUTPUT
 Enter length:5
-Febonacci series:0 1 1 2 3
+Fibonacci series:0 1 1 2 3
 ```
 
 ## 15. Write a program that creates illustrates different levels of protection in classes/subclasses belonging to same package or different packages.
@@ -536,7 +536,7 @@ The value of y is     30
 The value of z is     10
 ```
 
-## 16. Write a program "DivideByZero" that takes two numbers a and b as input, -witte a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
+## 16. Write a program "Divide By Zero" that takes two numbers a and b as input, -write a program computes a/b, and invokes Arithmetic Exception to generate a message when the denominator is zero.
 ```java
 
 import java.util.Scanner;
