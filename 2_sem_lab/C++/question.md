@@ -1,6 +1,6 @@
 1. Write a program to find greatest among three no. using nested if...else statement.
 
-```
+```c++
 // 1. Write a program to find greatest among three no. using nested if...else statement.
 
 #include <iostream>
@@ -30,7 +30,7 @@ OUTPUT:
 
 2. Write a program to find a no. is prime or not.
 
-```
+```c++
 // 2. Write a program to find a no. is prime or not.
 
 #include <iostream>
@@ -68,7 +68,7 @@ Give a number: 97
 
 3. Write a program to find GCD and LCM of two numbers.
 
-```
+```c++
 // 3. Write a program to find GCD and LCM of two numbers.
 
 #include <iostream>
