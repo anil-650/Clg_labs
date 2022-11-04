@@ -124,7 +124,134 @@ LCM of 2 numbers: 40
 ```
 
 4. Write a program to print the results for following series: 1! + 2! + 3! ...
+
+```c++
+// 4. Write a program to print the results for following series: 1! + 2! + 3! ...
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, i, sum=0, fact=1;
+
+    cout << "Enter number for series: ";
+    cin >> n;
+
+    for(i = 1; i <= n; i++){
+        fact = fact * i;
+        sum = sum + fact;
+    }
+
+    cout << "Sum of series: " << sum endl;
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter number for series: 3
+Sum of series: 9
+```
+
 5. Write a program to print multiplication 1 to 10.
+
+```c++
+// 5. Write a program to print multiplication 1 to 10.
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+    clrscr();
+
+    int i,j;
+
+    cout << "Multiplication form 1 to 10:" << endl;
+    for(i =1; i <= 10; i++)
+        for(j = 1; j < i; j++)
+            cout << i << "*" << j << "=" << i*j << endl;
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+1 * 1 = 1
+1 * 2 = 2
+.
+.
+.
+1 * 9 = 9
+1 * 10 = 10
+2 * 1 = 2
+2 * 2 = 4
+.
+.
+.
+2 * 9 = 18
+2 * 10 = 20
+3 * 1 = 3
+3 * 2 = 6
+.
+.
+.
+3 * 9 = 27
+3 * 10 = 30
+4 * 1 = 4
+4 * 2 = 8
+.
+.
+.
+4 * 9 = 36
+4 * 10 = 40
+5 * 1 = 5
+5 * 2 = 10
+.
+.
+.
+5 * 9 = 45
+5 * 10 = 50
+6 * 1 = 6
+6 * 2 = 12
+.
+.
+.
+6 * 9 = 54
+6 * 10 = 60
+7 * 1 = 7
+7 * 2 = 14
+.
+.
+.
+7 * 9 = 63
+7 * 10 = 70
+8 * 1 = 8
+8 * 2 = 16
+.
+.
+.
+8 * 9 = 72
+8 * 10 = 80
+9 * 1 = 9
+9 * 2 = 18
+.
+.
+.
+9 * 9 = 81
+9 * 10 = 90
+10 * 1 = 10
+10 * 2 = 20
+.
+.
+.
+10 * 9 = 90
+10 * 10 = 100
+```
+
 6. Write a program for swapping two no. pass by address.
 7. Write a program to swapping two no. pass by reference.
 8. Write a program to find the sum of four numbers using default argument passing.

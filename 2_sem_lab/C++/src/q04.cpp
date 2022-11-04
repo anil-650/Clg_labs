@@ -11,10 +11,10 @@ int main(){
     cin >> n;
 
     for(i = 1; i <= n; i++){
-        fact = fact * n;
+        fact = fact * i;
         sum = sum + fact;
     }
 
-    cout << "Sum of series: " << sum;
+    cout << "Sum of series: " << sum << endl;
     return 0;
 }
