@@ -253,9 +253,148 @@ OUTPUT:
 ```
 
 6. Write a program for swapping two no. pass by address.
+
+```c++
+// 6. Write a program for swapping two no. pass by address.
+
+#include <iostream>
+
+using namespace std;
+
+void swap(int a, int b){
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+
+    cout << "After swapping num1 = " << a << "\nAfter swapping num2 = " << b << endl;
+}
+
+int main(){
+    int n1,n2;
+    cout << "Enter 2 numbers: ";
+    cin >> n1 >> n2;
+
+    cout << "Before swapping num1 = " << n1 << "\nBefore swapping num2 = " << n2 << endl;
+    swap(n1, n2);
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter 2 numbers: 3 4
+Before swapping num1 = 3
+Before swapping num2 = 4
+After swapping num1 = 4
+After swapping num2 = 3
+```
+
 7. Write a program to swapping two no. pass by reference.
+
+```c++
+// 7. Write a program to swapping two no. pass by reference.
+
+#include <iostream>
+
+using namespace std;
+
+void swap( int *a,  int *b){
+    int tmp;
+    tmp = *a;
+    *a = *b;
+    *b = tmp;
+
+    cout << "After swapping num1 = " << *a << "\nAfter swapping num2 = " << *b << endl;
+}
+
+int main(){
+    int n1,n2;
+    cout << "Enter 2 numbers: ";
+    cin >> n1 >> n2;
+
+    cout << "Before swapping num1 = " << n1 << "\nBefore swapping num2 = " << n2 << endl;
+    swap(&n1, &n2);
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter 2 numbers: 4 5
+Before swapping num1 = 4
+Before swapping num2 = 5
+After swapping num1 = 5
+After swapping num2 = 4
+```
+
 8. Write a program to find the sum of four numbers using default argument passing.
+
+```c++
+// 8. Write a program to find the sum of four numbers using default argument passing.
+
+#include <iostream>
+
+using namespace std;
+
+int sum(int a, int b, int c=20, int d=40){
+    return a+b+c+d;
+}
+
+int main(){
+    cout << "Sum" << sum(5,10) << endl;
+    cout << "Sum" << sum(5,10,15) << endl;
+    cout << "Sum" << sum(5,10,15,30) << endl;
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Sum75
+Sum70
+Sum60
+```
+
 9. Write a program to find square and cube of a number using inline function.
+
+```c++
+// 9. Write a program to find square and cube of a number using inline function.
+
+#include <iostream>
+
+using namespace std;
+
+inline int square(int a){
+    return a*a;
+}
+
+inline int cube(int a){
+    return a*a*a;
+}
+
+int main(){
+    int num;
+    cout << "Enter a number: " ;
+    cin >> num;
+
+    cout << "Square of number: " << square(num) << endl;
+    cout << "Cube of number: " << cube(num) << endl;
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter a number: 5
+Square of number: 25
+Cube of number: 125
+```
+
 10. Write a program to find the factorial of a number.
 11. Write a program to find reverse of a number.
 12. Write a program for swapping of two numbers pass by value. 

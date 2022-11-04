@@ -10,7 +10,7 @@ void swap(int a, int b){
     a = b;
     b = tmp;
 
-    cout << "After swapping n1 = " << a << "\nAfter swapping n2 = " << b << endl;
+    cout << "After swapping num1 = " << a << "\nAfter swapping num2 = " << b << endl;
 }
 
 int main(){

@@ -4,13 +4,13 @@
 
 using namespace std;
 
-void swap(int *a, int *b){
+void swap( int *a,  int *b){
     int tmp;
     tmp = *a;
     *a = *b;
     *b = tmp;
 
-    cout << "After swapping n1 = " << a << "\nAfter swapping n2 = " << b << endl;
+    cout << "After swapping num1 = " << *a << "\nAfter swapping num2 = " << *b << endl;
 }
 
 int main(){
@@ -19,7 +19,7 @@ int main(){
     cin >> n1 >> n2;
 
     cout << "Before swapping num1 = " << n1 << "\nBefore swapping num2 = " << n2 << endl;
-    swap(*n1, *n2);
+    swap(&n1, &n2);
 
     return 0;
 }
