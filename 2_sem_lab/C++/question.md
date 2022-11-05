@@ -396,13 +396,314 @@ Cube of number: 125
 ```
 
 10. Write a program to find the factorial of a number.
+
+```c++
+// 10. Write a program to find the factorial of a number.
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, fact = 1, i;
+    cout << "Enter a number: " ;
+    cin >> n;
+
+    if(n == 0){
+        fact = 1;
+    } else {
+        for(i = n; i >= 1; i--){
+            fact = fact*i;
+        }
+    }
+
+    cout << "Factorial: " << fact << endl;
+
+    return 0;
+}
+
+```
+
+```
+OUTPUT:
+Enter a number: 5
+Factorial: 120
+```
+
 11. Write a program to find reverse of a number.
+
+```c++
+// 11. Write a program to find reverse of a number.
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, rev = 0, r;
+    cout << "Enter a number: " ;
+    cin >> n;
+
+    while(n > 0){
+        r = n%10;
+        rev = rev*10+r;
+        n = n/10;
+    }
+
+    cout << "Reverse: " << rev << endl;
+
+    return 0;
+}
+
+```
+
+```
+OUTPUT:
+Enter a number: 456
+Reverse: 654
+```
+
 12. Write a program for swapping of two numbers pass by value. 
+
+```c++
+// 12. Write a program for swapping of two numbers pass by value. 
+
+#include <iostream>
+
+using namespace std;
+
+void swap(int a, int b){
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+
+    cout << "After swapping num1 = " << a << "\nAfter swapping num2 = " << b << endl;
+}
+
+int main(){
+    int n1,n2;
+    cout << "Enter 2 numbers: ";
+    cin >> n1 >> n2;
+
+    cout << "Before swapping num1 = " << n1 << "\nBefore swapping num2 = " << n2 << endl;
+    swap(n1, n2);
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter 2 numbers: 3 4
+Before swapping num1 = 3
+Before swapping num2 = 4
+After swapping num1 = 4
+After swapping num2 = 3
+```
+
 13. Write a program to find sum of Four no. Using Default Argument in Member Function.
+
+```c++
+// 13. Write a program to find sum of Four no. Using Default Argument in Member Function.
+
+#include <iostream>
+
+using namespace std;
+
+class add{
+    public:
+        int sum(int p, int q, int r = 20, int s = 10)
+        {
+            return (p + q + r + s);
+        }
+}
+
+int main(){
+    add d;
+    cout << d.sum(5,30) << endl;
+    cout << d.sum(5,30,40) << endl;
+    cout << d.sum(5,30,40,50) << endl;
+
+    return 0;
+}
+
+```
+
+```
+OUTPUT:
+65
+85
+125
+```
+
 14. Write a program to area of circle, triangle, rectangle using function overloading.
+
+```c++
+// 14. Write a program to area of circle, triangle, rectangle using function overloading.
+
+#include <iostream>
+
+using namespace std;
+
+void area(double r){
+    cout << "Area of Circle: " << 3.14*r*r << endl;
+}
+
+void area(double b, double h){
+    cout << "Area of Triangle: " << 0.5*b*h << endl;
+}
+
+void area(int l, int b){
+    cout << "Area of Circle: " << l*b << endl;
+}
+
+int main(){
+    area(5.3);
+    area(3,6);
+    area(5,6);
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Area of Circle: 88.2026
+Area of Circle: 18
+Area of Circle: 30
+```
+
 15. Write a program to distinguish the properties of static & non-static data members.
+
+```c++
+// 15. Write a program to distinguish the properties of static & non-static data members.
+
+#include <iostream>
+
+using namespace std;
+
+class item{
+    static int count;
+    int number;
+
+    public:
+    void getdata(int a){
+        number = a;
+        count++;
+    }
+    void getcount(){
+        cout << "count: " << count << endl;
+    }
+
+};
+
+int item::count;
+
+int main(){
+    item a,b,c;
+
+    a.getcount();
+    b.getcount();
+    c.getcount();
+    a.getdata(100);
+    b.getdata(200);
+    c.getdata(300);
+    a.getcount();
+    b.getcount();
+    c.getcount();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+count: 0
+count: 0
+count: 0
+count: 3
+count: 3
+count: 3
+```
+
 16. Write a program to show the method of accessing the static private method function.
+
+```c++
+// 16. Write a program to show the method of accessing the static private method function.
+
+#include <iostream>
+
+using namespace std;
+
+class test{
+    static int count;
+    static void display(){
+        count++;
+        cout << "count: " << count << endl;
+    }
+
+    public:
+    static void showcount(){
+        display();
+    }
+};
+
+int test::count;
+
+int main(){
+    test t1;
+    t1.showcount();
+
+    return 0;
+}
+
+```
+
+```
+OUTPUT:
+count: 1
+```
+
 17. Write a program to show the ways calling constructors and destructors.
+
+```c++
+// 17. Write a program to show the ways calling constructors and destructors.
+
+#include <iostream>
+
+using namespace std;
+
+class B{
+    public:
+        B(){
+            cout << "Constructor is called\n";
+        }
+
+        ~B(){
+            cout << "Destructor is called\n";
+        }
+
+        void show(){
+            cout << "Hello World" << endl;
+        }
+};
+
+int main(){
+    B cd;
+    cd.show();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Constructor is called
+Hello World
+Destructor is called
+```
+
 18. Write a program to perform using ++ operator overloading using member function.
 19. Write a program to perform using ++ operator friend using member function.
 20. Write a program to perform using + operator overloading for 2 complex number function.
