@@ -705,8 +705,297 @@ Destructor is called
 ```
 
 18. Write a program to perform using ++ operator overloading using member function.
+
+```c++
+// 18. Write a program to perform using ++ operator overloading using member function.
+
+#include <iostream>
+
+using namespace std;
+
+class A{
+    int a;
+    public:
+    A(){
+        a = 0;
+    }
+
+    void operator++(){
+        a++;
+    }
+
+    void display(){
+        cout << a << endl;
+    }
+};
+
+int main(){
+    A ob;
+    ++ob;
+    ob.display();
+    ob.operator++();
+    ob.display();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+1
+2
+```
+
 19. Write a program to perform using ++ operator friend using member function.
+
+```c++
+// 19. Write a program to perform using ++ operator friend using member function.
+
+#include <iostream>
+
+using namespace std;
+
+class A{
+    int a;
+    public:
+    A(){
+        a = 0;
+    }
+
+    void display(){
+        cout << a << endl;
+    }
+
+    friend void operator++(A &op1);
+    friend void operator++(A &op2,int);
+};
+
+void operator++(A &op1){
+    op1.a++;
+}
+
+void operator++(A &op2,int){
+    op2.a++;
+}
+
+
+int main(){
+    A ob;
+    ++ob;
+    ob.display();
+    ob++();
+    ob.display();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+1
+2
+```
+
 20. Write a program to perform using + operator overloading for 2 complex number function.
+
+```c++
+// 20. Write a program to perform using + operator overloading for 2 complex number function.
+
+#include <iostream>
+
+using namespace std;
+
+class complex{
+    int x,y;
+    public:
+    void getdata(int real, int imag){
+    x = real;
+    y = imag;
+    }
+
+    complex operator+(complex c){
+        complex temp;
+        temp.x = x+c.x;
+        temp.y = y+c.y;
+        return temp;
+    }
+
+    void display(){
+        cout << "Addition result = " << x << "+i" << y << endl;
+    }
+
+};
+
+int main(){
+    complex c1, c2, c3;
+    c1.getdata(2, 3);
+    c2.getdata(3, 3);
+    c3 = c1+c2;
+    c3.display();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Addition result = 5+i6
+```
+
 21. Write a program to perform using + operator overloading for string concatenation.
+
+```c++
+// 21. Write a program to perform using + operator overloading for string concatenation.
+
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+class String{
+    public:
+        char str[20];
+
+        void input(){
+            cout << "Enter a string: ";
+            cin >> str;
+        }
+
+        void display(){
+            cout << str;
+        }
+
+
+        String operator+(String x){
+            String s;
+            strcat(str, " ");
+            strcat(str, x.str);
+            strcpy(s.str, str);
+            return s;
+        }
+};
+
+int main(){
+    String str1, str2, str3;
+    str1.input();
+    str2.input();
+    
+    str1.display();
+    str2.display();
+
+    str3 = str1+str2;
+
+    str3.display();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter a string: Nihar
+Enter a string: Hansda
+Nihar Hansda
+```
+
 22. Write a program to single inheritance.
+
+```c++
+// 22. Write a program to single inheritance.
+
+#include <iostream>
+
+using namespace std;
+
+class A{
+    int a,b;
+    public:
+    void input(){
+        cout << "Enter value for a & b: ";
+        cin >> a >> b;
+    }
+
+    void show(){
+        cout << "a = " << a << "\tb = " << b << endl;
+    }
+};
+
+class B:public A{
+    int c,d;
+    public:
+    void getdata(){
+        cout << "Enter value for c & d: ";
+        cin >> c >> d;
+    }
+
+    void display(){
+        cout << "c = " << c << "\td = " << d << endl;
+    }
+};
+
+int main(){
+    B ob;
+    ob.input();
+    ob.show();
+    ob.getdata();
+    ob.display();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+Enter value for a & b: 3 4
+a = 3   b = 4
+Enter value for c & d: 5 6
+c = 5   d = 6
+```
+
 23. Write a program to multiple inheritance.
+
+```c++
+// 23. Write a program to multiple inheritance.
+
+#include <iostream>
+
+using namespace std;
+
+class A{
+    public:
+        void show(){
+            cout << "class A" << endl;
+        }
+};
+
+class B{
+    public:
+        void show(){
+            cout << "class B" << endl;
+        }
+};
+
+class C:public A, public B{
+    public:
+        void show(){
+            cout << "class C" << endl;
+        }
+};
+
+
+int main(){
+    C ob;
+    ob.show();
+    ob.A::show();
+    ob.B::show();
+
+    return 0;
+}
+```
+
+```
+OUTPUT:
+class C
+class A
+class B
+```
