@@ -30,7 +30,7 @@ hire_date date NOT NULL,
 dno int(10) NOT NULL,
 commission decimal(10,2) DEFAULT NULL,
 salary decimal(7,2) NOT NULL,
-CONSTRAINT dno FOREIGN KEy (`dno`)
+CONSTRAINT dno FOREIGN KEY (`dno`)
 REFERENCES department(`dno`),
 CONSTRAINT manager FOREIGN KEy (`manager`)
 REFERENCES emplyoee(`eno`)
