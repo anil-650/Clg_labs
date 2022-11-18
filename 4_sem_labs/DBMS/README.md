@@ -81,7 +81,7 @@ SELECT eno,ename,job_type,hire_date FROM employee;
 | 793 | Miller | Clerk     | 1982-01-23 |
 +-----+--------+-----------+------------+
 ```
-2. Query to display unique jobs from Employee table.o
+2. Query to display unique jobs from Employee table.
 
 ```sql
 SELECT DISTINCT job_type FROM employee;
@@ -162,8 +162,7 @@ SELECT ename,salary FROM employee WHERE (salary + commission) > 2850;
 +-------+---------+
 ```
 
-6. Query to display Employee name and Department number for the Employee no
-   7900.
+6. Query to display Employee name and Department number for the Employee no 790.
 
 ```sql
 SELECT ename,dno FROM employee WHERE eno='790';

@@ -116,7 +116,7 @@ int main(){
 
 ```
 
-3.Simulate checksum generator and checker
+3. Simulate checksum generator and checker
 
 ```c++
 // C++ implementation of the above approach
@@ -261,7 +261,7 @@ int main(){
 }
 ```
 
-4.Simulate hamming code method
+4. Simulate hamming code method
 
 ```c
 #include <math.h>
@@ -327,7 +327,7 @@ void main()
 }
 ```
 
-5.Simulate and implement stop and wait protocol for noisy channel
+5. Simulate and implement stop and wait protocol for noisy channel
 
 ```c++
 #include<iostream>
