@@ -1,5 +1,9 @@
 # CORE - 8 Practical: Java Programming Lab
 
+## [**Answers ▶**](./ans.md)
+
+## Questions
+
 1. To find the sum of any number of integers entered as command line arguments.
 2. To find the factorial of a given number.
 3. To convert a decimal to binary number.
