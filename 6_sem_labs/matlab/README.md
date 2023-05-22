@@ -1,6 +1,6 @@
 # Questions
 
-## [Answers ➡️](./CO_ans.md)
+## [Answers ➡️](./Ans_matlab.md)
 
 1. Find the roots of the equation by bisection method
 
